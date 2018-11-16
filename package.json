@@ -22,6 +22,7 @@
     "serverless-offline": "^3.31.3",
     "serverless-offline-scheduler": "^0.3.5",
     "serverless-plugin-typescript": "^1.1.5",
+    "tough-cookie": "^2.4.3",
     "ts-node": "^7.0.1"
   },
   "dependencies": {

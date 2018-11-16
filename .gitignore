@@ -8,3 +8,4 @@ jspm_packages
 .vscode
 .env
 .build
+.env.*
