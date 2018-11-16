@@ -1,5 +1,5 @@
 # AWS Lambda + Typescript + Cron + Discord Webhooks
-> Set up a cron job for posting on a Discord channel
+Set up a cron job for posting on a Discord channel
 
 # Installation
 
@@ -24,11 +24,13 @@ npm i serverless-offline serverless-plugin-typescript --save-dev
 ```
 
 ```
-severless offline start
+npm install mocha @types/mocha chai @types/chai --save-dev
 ```
 
+## Start Service
+
 ```
-npm install mocha @types/mocha chai @types/chai --save-dev
+severless offline start
 ```
 
 ## References
