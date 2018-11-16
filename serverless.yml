@@ -44,6 +44,9 @@ provider:
 # you can define service wide environment variables here
 #  environment:
 #    variable1: value1
+plugins:
+  - serverless-plugin-typescript
+  - serverless-offline
 
 # you can add packaging information here
 #package:
@@ -53,8 +56,17 @@ provider:
 #  exclude:
 #    - exclude-me.js
 #    - exclude-me-dir/**
+package:
+  exclude:
+    - node_modules/**/*
+  include:
+    handler.ts
 
 functions:
+  cron:
+    handler: handler.hello
+    events:
+      - schedule: cron(0 3 * * *)
   hello:
     handler: handler.hello
 
