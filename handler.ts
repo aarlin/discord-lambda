@@ -1,6 +1,5 @@
 import { Handler, Context, Callback } from 'aws-lambda';
 import * as dotenv from "dotenv";
-import * as tough from "tough-cookie";
 
 dotenv.config();
 

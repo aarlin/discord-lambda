@@ -5,7 +5,7 @@ provider:
   runtime: nodejs8.10
 
 plugins:
-  - serverless-plugin-typescript
+  - '@hewmen/serverless-plugin-typescript'
   - serverless-offline
   - serverless-offline-scheduler
 
@@ -16,10 +16,6 @@ package:
     handler.ts
 
 functions:
-  # postMessage:
-  #   handler: handler.postMessage
-  #   events:
-  #     - schedule: cron(0 3 * * *)
   postMessage:
     handler: handler.postMessage
     events:
