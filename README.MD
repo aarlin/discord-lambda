@@ -1,5 +1,6 @@
-# AWS Lambda + Typescript + Cron + Discord Webhooks
-Set up a cron job for posting on a Discord channel
+# Template for AWS Lambda + Typescript + Cron + Discord Webhooks
+When IFTTT and Zapier are not enough  
+Set up a cron job for posting on a Discord channel  
 
 # Installation
 ```
@@ -8,6 +9,11 @@ npm install
 
 ```
 npm i serverless -g
+```
+
+
+```
+serverless config credentials --provider aws --key YOUR_ACCESS_KEY --secret YOUR_SECRET_KEY
 ```
 
 Create a `.env` file that holds the webhook URL for Discord
@@ -73,13 +79,10 @@ https://github.com/prisma/serverless-plugin-typescript/pull/109
 
 https://www.npmjs.com/package/@hewmen/serverless-plugin-typescript
 
+## Creating Template
 
 ```
 serverless create --template aws-nodejs-typescript
-```
-
-```
-serverless config credentials --provider aws --key YOUR_ACCESS_KEY --secret YOUR_SECRET_KEY
 ```
 
 ```
