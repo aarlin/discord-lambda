@@ -6,23 +6,25 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "\\"
-  },
-  "author": "",
-  "license": "MIT",
-  "devDependencies": {
-    "@hewmen/serverless-plugin-typescript": "^1.1.17",
-    "@types/aws-lambda": "^8.10.27",
-    "@types/dotenv": "^6.1.1",
-    "dotenv": "^6.2.0",
-    "lambda-tester": "^3.6.0",
+  "dependencies": {
     "minimal-request-promise": "^1.5.0",
+    "source-map-support": "^0.5.10"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.17",
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^10.12.18",
+    "dotenv": "^6.2.0",
+    "request-promise": "^4.2.4",
+    "serverless-dotenv-plugin": "^2.1.1",
     "serverless-offline": "^3.33.0",
     "serverless-offline-scheduler": "^0.3.7",
-    "ts-node": "^7.0.1",
-    "typescript": "^3.5.2"
+    "serverless-plugin-typescript": "^1.1.7",
+    "serverless-webpack": "^5.2.0",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.2.4",
+    "webpack": "^4.29.0"
   },
-  "dependencies": {}
+  "author": "The serverless webpack authors (https://github.com/elastic-coders/serverless-webpack)",
+  "license": "MIT"
 }
