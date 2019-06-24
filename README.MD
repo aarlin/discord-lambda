@@ -30,7 +30,7 @@ sls deploy -v
 
 To run locally
 ```
-sls offline start
+sls invoke local -f cron
 ```
 
 To see the cost usage
