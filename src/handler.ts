@@ -1,10 +1,12 @@
-import { Handler, Context, Callback } from 'aws-lambda';
+
+import { APIGatewayEvent, Callback, Context } from 'aws-lambda';
 import * as dotenv from "dotenv";
+import 'source-map-support/register';
 
 dotenv.config();
 
-const postMessage: Handler = (event: any, context: Context, callback: Callback) => {
-    let content = 'Testing new message'
+const postMessage = (_event : APIGatewayEvent, _context : Context, callback : Callback) => {
+  let content = 'Testing new message'
     var requestPromise = require('minimal-request-promise'),
         options = {
             headers: {
@@ -24,6 +26,6 @@ const postMessage: Handler = (event: any, context: Context, callback: Callback) 
             console.log('got error', response.body, response.headers, response.statusCode, response.statusMessage);
         }
     );
-};
+}
 
 export { postMessage }
