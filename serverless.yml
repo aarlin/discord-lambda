@@ -19,9 +19,3 @@ functions:
     handler: src/handler.postMessage
     events:
       - schedule: rate(3 minutes)
-
-# package:
-#   exclude:
-#     - node_modules/**/*
-#   include:
-#     handler.ts
