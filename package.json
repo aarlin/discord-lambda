@@ -17,7 +17,7 @@
     "dotenv": "^6.2.0",
     "request-promise": "^4.2.4",
     "serverless-dotenv-plugin": "^2.1.1",
-    "serverless-offline": "^3.33.0",
+    "serverless-offline": "^12.0.3",
     "serverless-offline-scheduler": "^0.3.7",
     "serverless-plugin-typescript": "^1.1.7",
     "serverless-webpack": "^5.2.0",
